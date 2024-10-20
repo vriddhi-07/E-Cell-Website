@@ -1,0 +1,18 @@
+/* index.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #1B4965;
+    color: #1B4965;
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    padding: 20px;
+  }
+  
+  p {
+    padding: 10px 20px;
+  }
+  

@@ -1,0 +1,34 @@
+/* src/components/Header.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #1B4965;
+  }
+  
+  .logo a {
+    font-size: 1.5rem;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  
+  .nav-links li {
+    margin-right: 20px;
+  }
+  
+  .nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+  }
+  
+  .nav-links a:hover {
+    border-bottom: 2px solid #CAE9FF;
+  }
+  

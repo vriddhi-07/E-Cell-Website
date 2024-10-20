@@ -1,0 +1,51 @@
+/* Home.css */
+body {
+  margin: 0;
+  padding: 0;
+  overflow: auto; /* Allow scrolling */
+  background-color: #1B4965; /* Dark background */
+  color: #e0e0e0; /* Light text color for contrast */
+}
+
+h1 {
+  font-size: 48px;
+  text-align: center;
+  margin: 0;
+  animation: fadeIn 1s ease; /* Fade-in effect for the main title */
+}
+
+p {
+  font-size: 24px;
+  text-align: center;
+  margin: 10px 0;
+  animation: fadeIn 1s ease; /* Fade-in effect for paragraphs */
+}
+
+.hero-section {
+  padding: 20px 10px;
+  background-color: #1B4965; /* Darker background for sections */
+  margin: 10px 0;
+  border-radius: 5px;
+  animation: fadeIn 1s ease; /* Fade-in effect for sections */
+}
+
+.about-section {
+  padding: 50px 20px;
+  background-color: #1B4965; /* Darker background for sections */
+  margin: 20px 0;
+  border-radius: 10px;
+  animation: fadeIn 1s ease; /* Fade-in effect for sections */
+}
+
+
+/* Keyframes for fadeIn animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Slight upward movement */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
