@@ -2,12 +2,13 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif;
     background-color: #1B4965;
     color: #1B4965;
   }
   
   h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 20px;
   }
