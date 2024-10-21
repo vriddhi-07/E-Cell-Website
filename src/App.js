@@ -13,6 +13,7 @@ function App() {
   return (
     <Router>
       <div className="App">
+        <div className="background"></div>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />

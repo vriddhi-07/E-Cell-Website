@@ -1,10 +1,12 @@
 /* src/components/Header.css */
 .header {
     display: flex;
+    z-index: 10; /* Higher than background */
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #1B4965;
+    background-color: rgba(27, 73, 101, 0.6);
+    position: relative;
   }
   
   .logo a {
