@@ -1,35 +1,100 @@
 /* src/components/Members.css */
-.members {
-    padding: 50px;
-    text-align: center;
-    background-color: #BEE9E8;
-  }
-  
-  .members h2 {
-    color: #1B4965;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-  }
-  
-  .members-list {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .member-card {
-    background-color: #62B6CB;
-    padding: 20px;
-    border-radius: 10px;
-    color: white;
-    text-align: center;
-    width: 200px;
-  }
-  
-  .member-card img {
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin-bottom: 15px;
-  }
-  
+
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  padding: 40px;
+}
+
+.member {
+  text-align: center;
+}
+
+.image-container {
+  position: relative;
+  width: 160px;
+  height: 160px;
+  margin-bottom: 10px;
+  background-color: #020223; /* Dark background */
+  box-shadow: 0px 20px 35px rgba(0, 0, 0, 0.3); /* Shadow effect */
+  overflow: hidden;
+}
+
+.profile-image {
+  position: absolute; /* Adjust position for layering */
+  object-fit: cover;
+  transform: translate(-50%, 3%);
+  z-index: 2; /* Bring the image on top of the gradient */
+}
+
+.image-container::before{
+  position: absolute;
+  width: 150%;
+  height:150%;
+  background: conic-gradient(from 90deg, rgb(0 0 0 / 0%)70%, rgb(11 78 230 / 9%) 80%, rgb(0 220 255)100%);
+  content : '';
+  left: -25%;
+  top: -25%;
+  animation: rotate 3s infinite linear;
+}
+
+.image-container::after{
+  position: absolute;
+  width: 94%;
+  height:94%;
+  background-color: #020223;
+  content : '';
+  left: 3%;
+  top: 3%;
+}
+
+@keyframes rotate {
+  100% {
+    transform: rotate(360deg);
+  }  
+}
+
+
+/* Hover effect and icon overlay */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 3; /* Ensure overlay is above all */
+}
+
+.overlay .icon {
+  color: white;
+  font-size: 20px;
+  margin: 0 10px;
+}
+
+.overlay .icon:hover {
+  color: #CAE9FF;
+}
+
+.image-container:hover .overlay {
+  opacity: 1;
+}
+
+.member-info h3 {
+  font-size: 1.2rem;
+  margin-top: 0px;
+  margin: -10px;
+}
+
+.member-info h4 {
+  font-size: 1rem;
+  color: #f7f5f5;
+  margin: 0px;
+}
