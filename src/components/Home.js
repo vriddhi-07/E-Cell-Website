@@ -20,7 +20,7 @@ function Home() {
         </div>
       </div>
       
-      <section className="about-section">        
+      <section className="about-section">
         <h2>About Us</h2>
         <p>
           The Entrepreneurship Cell is a student-run initiative that fosters innovation and entrepreneurial spirit within our campus community.
