@@ -16,7 +16,7 @@ function App() {
         <div className="background"></div>
         <Header />
         <Routes>
-          <Route path="/" element={<Home />} />
+          <Route path="/" exact element={<Home />} />
           <Route path="/members" element={<Members />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />

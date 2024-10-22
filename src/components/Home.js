@@ -14,13 +14,13 @@ function Home() {
       <Particles params={particlesConfig} />
 
       <div className="hero-section">
-        <div className="overlay">
+        <div className="intro">
           <h1>Welcome to E-Cell</h1>
           <p>Empowering Innovation and Entrepreneurship</p>
         </div>
       </div>
       
-      <section className="about-section">
+      <section className="about-section">        
         <h2>About Us</h2>
         <p>
           The Entrepreneurship Cell is a student-run initiative that fosters innovation and entrepreneurial spirit within our campus community.
