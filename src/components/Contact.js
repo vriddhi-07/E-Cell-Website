@@ -43,7 +43,7 @@ const Contact = () => {
         'service_2vph5lo',
         'template_wskcb9k',
         formData,
-        '0c5MRULasSPLQz6BF' // Replace with your user ID
+        '0c5MRULasSPLQz6BF'
       ).then((result) => {
         console.log(result.text);
         setSuccessMessage("Thank you! Your message has been sent.");
