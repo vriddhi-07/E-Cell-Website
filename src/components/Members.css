@@ -25,6 +25,8 @@
 .profile-image {
   position: absolute; /* Adjust position for layering */
   object-fit: cover;
+  width: 100%; /* Fill the width of the container */
+  height: 100%; /* Fill the height of the container */
   transform: translate(-50%, 3%);
   z-index: 2; /* Bring the image on top of the gradient */
 }
