@@ -7,6 +7,7 @@ import Home from './components/Home';
 import Members from './components/Members';
 import Events from './components/Events';
 import Gallery from './components/Gallery';
+import Contact from './components/Contact';
 import './App.css';
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
           <Route path="/members" element={<Members />} />
           <Route path="/events" element={<Events />} />
           <Route path="/gallery" element={<Gallery />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
         <Footer />
       </div>
