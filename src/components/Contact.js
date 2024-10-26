@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   // State for form fields
@@ -29,7 +30,7 @@ const Contact = () => {
     if (!formData.email) formErrors.email = "Email is required";
     else if (!/\S+@\S+\.\S+/.test(formData.email)) formErrors.email = "Email address is invalid";
     if (!formData.subject) formErrors.subject = "Subject is required";
-    if (!formData.message) formErrors.message = "Message is required";
+    if (!formData.message) formErrors.message = "Brevity is the soul of wit, but we need your message to have text it :)";
     return formErrors;
   };
 
@@ -38,10 +39,18 @@ const Contact = () => {
     e.preventDefault();
     const validationErrors = validate();
     if (Object.keys(validationErrors).length === 0) {
-      // Process form submission (could integrate with an API here)
-      setSuccessMessage("Thank you! Your message has been sent.");
-      setFormData({ name: '', email: '', subject: '', message: '' });
-      setErrors({});
+      emailjs.send(
+        'service_2vph5lo',
+        'template_wskcb9k',
+        formData,
+        '0c5MRULasSPLQz6BF'
+      ).then((result) => {
+        console.log(result.text);
+        setSuccessMessage("Thank you! Your message has been sent.");
+      }).catch((error) => {
+        console.log(error.text);
+        alert("Failed to send message.");
+      });
     } else {
       setErrors(validationErrors);
     }
