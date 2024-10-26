@@ -1,36 +1,50 @@
 /* src/components/Header.css */
 .header {
-    display: flex;
-    z-index: 10; /* Higher than background */
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-    background-color: rgba(27, 73, 101, 0.6);
-    position: relative;
-  }
-  
-  .logo a {
-    font-size: 1.5rem;
-    color: white;
-    text-decoration: none;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-  }
-  
-  .nav-links li {
-    margin-right: 20px;
-  }
-  
-  .nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.1rem;
-  }
-  
-  .nav-links a:hover {
-    border-bottom: 2px solid #CAE9FF;
-  }
-  
+  display: flex;
+  z-index: 10; /* Higher than background */
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px; /* Adjusted padding to reduce header height */
+  background-color: #000000;
+  position: relative;
+  height: 50px;
+}
+
+/* Add the new separator style */
+.header::after {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust thickness */
+  background: linear-gradient(to right, transparent, white 50%, transparent);
+  position: absolute;
+  bottom: -2px; /* Position it below the header */
+  left: 50%; /* Center it horizontally */
+  width: 100%; /* Full width */
+  transform: translateX(-50%); /* Center the line */
+}
+
+/* Logo styles */
+.logo a {
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+.nav-links li {
+  margin-right: 20px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+.nav-links a:hover {
+  border-bottom: 2px solid #CAE9FF;
+}

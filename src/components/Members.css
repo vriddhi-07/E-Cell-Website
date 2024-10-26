@@ -8,8 +8,8 @@
   padding: 40px;
 }
 
-.member {
-  text-align: center;
+.members-container {
+  padding: 20px;
 }
 
 .image-container {
@@ -58,6 +58,18 @@
   }  
 }
 
+.mentor {
+  display: flex;
+  justify-content: space-between; /* Space between info and image */
+  align-items: left;
+}
+
+.mentor-designation {
+  font-size: 14px; /* Adjust font size */
+  color: #ffffff; /* Change color if needed */
+  margin-top: 5px; /* Space between name and designation */
+}
+
 
 /* Hover effect and icon overlay */
 .overlay {
@@ -89,6 +101,14 @@
   opacity: 1;
 }
 
+.member {
+  display: flex; /* Use flexbox for layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  text-align: center; /* Center text */
+}
+
+/* Existing styles for member-info remain unchanged */
 .member-info h3 {
   font-size: 1.2rem;
   margin-top: 0px;
