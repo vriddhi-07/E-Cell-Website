@@ -198,7 +198,7 @@ p {
 }
 
 .lightbulb-emoji {
-  font-size: 8rem; /* Increase size of the light bulb icon */
+  font-size: 100px; /* Increase size of the light bulb icon */
   margin-right: 20px; /* Space between the icon and the quote */
   display: inline-flex;
   align-items: center;

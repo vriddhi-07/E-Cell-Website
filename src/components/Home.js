@@ -61,8 +61,8 @@ function Home() {
           <lord-icon
             src="https://cdn.lordicon.com/bfqujiem.json"
             trigger="loop"
-            delay="1500"
-            state="in-reveal"
+            delay="1000"
+            state="loop"
             style={{ width: "400px", height: "400px" }} />
         </div>
       </div>
