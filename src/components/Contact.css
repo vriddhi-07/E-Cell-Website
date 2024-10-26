@@ -1,33 +1,114 @@
-/* Add these styles to your CSS file */
-form {
-    max-width: 400px;
-    margin: 0 auto;
-  }
-  div {
-    margin-bottom: 15px;
-  }
-  label {
-    display: block;
-    font-weight: bold;
-  }
-  input, textarea {
-    width: 100%;
-    padding: 8px;
-    box-sizing: border-box;
-  }
-  button {
-    padding: 10px 15px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  .error {
-    color: red;
-    font-size: 0.9em;
-  }
-  .success {
-    color: green;
-    font-size: 1.1em;
-  }
-  
+.contact-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.contact-content {
+  display: flex;
+  gap: 20px;
+}
+
+.contact-form {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-details {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.4); 
+  color: #fff;                            
+  border: 1px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 5px;
+  box-shadow: 
+    0 0 5px rgba(0, 150, 255, 0.5),
+    0 0 10px rgba(0, 150, 255, 0.5),
+    0 0 20px rgba(0, 150, 255, 0.7);
+}
+
+.contact-details p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #fff;
+}
+
+.contact-details h3 {
+  margin-top: 0;
+  color: #fff;
+}
+
+.instagram-link {
+  display: flex;
+  align-items: center;
+  color: white; /* Default color */
+  text-decoration: none; /* No underline */
+}
+
+.instagram-link:hover {
+  color: #F1A7B8; /* Change to the desired hover color (Instagram color) */
+}
+
+.email-link {
+  display: flex;
+  align-items: center;
+  color: white; /* Outlook Blue */
+  text-decoration: none; /* No underline */
+}
+
+.email-link:hover {
+  color: #33c9dc; /* A darker blue for hover effect */
+}
+
+.contact-details div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  color:#fff;
+}
+
+input, textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 70%
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+.success {
+  color: #28a745;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: #ff3333;
+  font-size: 0.875em;
+}
